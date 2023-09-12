@@ -11,6 +11,14 @@ var kDarkColorScheme = ColorScheme.fromSeed(
 );
 
 void main() {
+  // One way to handle screen orientation
+  /*WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+  ]).then((fn){
+
+  });*/
+
   runApp(
     MaterialApp(
       darkTheme: ThemeData.dark().copyWith(
@@ -61,4 +69,5 @@ void main() {
       home: const Expenses(),
     ),
   );
+
 }
